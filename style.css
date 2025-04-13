@@ -1,0 +1,121 @@
+* {
+    
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins',  sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    margin: 0;
+}
+
+.hero {
+    background: url();
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: gold;
+}
+.btn {
+    background: gold;
+    padding: 10px 20px;
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: 0,3s ease;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: #ffd700;
+}
+
+.musci-section {
+    padding: 40px;
+    background-color: #111;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.song-card {
+    background-color: #222;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-left: 5px solid gold;
+    animation: fadeInUp 0.5s ease;
+}
+
+.song-card h3 {
+    margin: 0 0 10px;
+    color: gold;
+} 
+
+audio {
+    width: 100%;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.download-btn {
+    background-color: gold;
+    color: black;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.download-btn:hover {
+    background-color: white;
+}
+
+@keyframes fadeInUp {
+    0% {transform: translateY(20px); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
+}
+
+.fanbase-section {
+    padding: 40px;
+    background-color: #000;
+    text-align: center;
+}
+
+.fanbase-section input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 10px;
+}
+
+.fanbase-section button {
+    padding: 10px 20px;
+    border: none;
+    background-color: gold;
+    color: black;
+    border-radius: 4px;
+    font-weight: bold;
+}
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Raver Music</title>
+    <link rel="stylesheet" href="./raver.css">
+</head>
+<body>
+    <header>
+        <div class="logo">M.D Raver <span class="fire-emoji">🔥🔥🔥🔥</span></div>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for songs or albums...">
+        </div>
+    </header>
+
+    <section class="song-list">
+        <div class="song-card" onclick="playSong('song1')">
+            <img src="./energy.jpeg" alt="Song 1">
+            <h3>Energy</h3>
+            <p>M.D RAVER FT KALI FIZY</p>
+        </div>
+        <div class="song-card" onclick="playSong('song2')">
+            <img src="./iwanttogo.jpeg" alt="Song 2">
+            <h3>I Want to Go</h3>
+            <p>M.D RAVER FT SKIP LHEE</p>
+        </div>
+
+        <div class="song-card" onclick="playSong('song3')">
+         <img src="./energy.jpeg" alt="Song 1">
+         <h3>MY DEALER</h3>
+         <p>M.D RAVER FT SLIMZZY K AND SKIP LHEE</p>
+     </div>
+
+     <div class="song-card" onclick="playSong('song4')">
+      <img src="./energy.jpeg" alt="Song 1">
+      <h3>Energy (SpeedUp)</h3>
+      <p>M.D RAVER FT KALI FIZY </p>
+  </div>
+
+  <div class="song-card" onclick="playSong('song1')">
+   <img src="./energy.jpeg" alt="Song 1">
+   <h3>Energy</h3>
+   <p>M.D Raver</p>
+</div>
+
+
+        <!-- Add more song cards as needed -->
+    </section>
+
+    <div id="player" class="player">
+        <button id="close-btn" class="close-btn">&times;</button>
+
+        <div class="player-header">
+            <img id="player-cover" src="" alt="Album Cover">
+            <h3 id="song-title">Select a song to play</h3>
+        </div>
+
+        <div id="player-controls">
+            <button id="play-btn">Play</button>
+            <button id="download-btn">Download MP3</button>
+        </div>
+
+        <audio id="audio-player" controls>
+            <source id="audio-source" src="" type="audio/mp3">
+        </audio>
+    </div>
+
+    <script src="./raver.js"></script>
+</body>
+</html>
